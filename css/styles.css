@@ -1,0 +1,178 @@
+/* Using Moblie-First Approach as the Default styles for Small Screens - both Portrait and Landscape */
+/* === Main Components === */
+body {
+    background-color: ghostwhite;
+    font-family: "Georgia", "Times New Roman", sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background-color: lavender;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* === Navigation === */
+nav ul {
+    flex-direction: column;
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+    margin-bottom: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: indigo;
+    padding: 10px 15px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: white;
+    color: #4B0082;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* === Main Content === */
+main {
+    text-align: center;
+    padding: 20px;
+}
+
+/* === Headings === */
+h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: MediumSlateBlue;
+}
+
+h2 {
+    font-size: 1.6rem;
+    color: #4B0082;
+    font-family: "Luminari", sans-serif;
+}
+
+/* === Paragraph Styling === */
+p {
+    font-size: 1.2rem;
+    max-width: 90%;
+    margin: 20px auto;
+}
+
+/* === Image Styling === */
+main img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+main img:hover {
+    transform: scale(1.05);
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+    padding: 10px;
+}
+
+/* === For Desktop (Large screens with minimum width of 1024px) === */
+@media (min-width: 1024px) {
+    main {
+        padding: 40px;
+    }
+
+    nav ul {
+        flex-direction: row;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+        max-width: 800px;
+    }
+
+    .image-container {
+        max-width: 1000px;
+        margin: auto;
+        padding: 40px
+    }
+}
+
+/* ===  For Tablet (Portrait and Landscape) === */
+@media (max-width: 1024px) {
+    /* Portrait Orientation */
+    @media (max-width: 768px) {
+        nav ul {
+            flex-direction: column;
+        }
+
+        nav ul li {
+            margin-bottom: 10px;
+        }
+
+        main {
+            padding: 15px;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+        }
+
+        p {
+            font-size: 1.3rem;
+            max-width: 90%;
+        }
+    }
+
+    /* Landscape Orientation */
+    @media (max-width: 1024px) and (orientation: landscape) {
+        nav ul {
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1.4rem;
+        }
+    }
+}
