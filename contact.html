@@ -1,44 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UFT-8">
-    <meta name="viewport" content="width=device-width, initital-scale=1.0">
-    <title>EcoChic | Contact</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoChic | Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css"> 
 </head>
-
 <body>
+    <!-- Header / Navbar -->
     <header>
-        <h1>Contact Us:</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="articles.html">Articles</a></li>
-                <li><a href="tips.html">Tips & Tricks</a></li>
-                <li><a href="progress.html">Progress</a></li>
+        <nav class="navbar section-content">
+            <a href="index.html" class="nav-logo">
+                <h2 class="logo-text">ecochic.</h2>
+            </a>
+            <ul class="nav-menu">
+                <button id="menu-close-button" class="fas fa-times"></button>
+                <li class="nav-items">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-items">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-items">
+                    <a href="contact.html" class="nav-link" id="contactbutton">Contact Us</a>
+                </li>
             </ul>
+
+            <button id="menu-open-button" class="fas fa-bars"></button>
         </nav>
     </header>
 
     <main>
-        <h2>Get In Touch With Us:</h2>
-        <form action="#" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+         <section class="contact-section">
+            <h2 class="section-title">Contact Us</h2>
+            <div id="success-message" class="hidden">
+                <p>Thank you! Your message has been received. We’ll get back to you soon!</p>
+            </div>
+            <div class="section-content">
+                <ul class="contact-info-list">
+                  <li class="contact-info">
+                     <i class="fa-solid fa-location-crosshairs"></i>
+                     <p>Toronto, Canada</p>
+                  </li>
+                  <li class="contact-info">
+                     <i class="fa-regular fa-envelope"></i>
+                     <p>info@ecochic.ca</p>
+                  </li>
+                  <li class="contact-info">
+                     <i class="fa-regular fa-clock"></i>
+                     <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+                  </li>
+                  <li class="contact-info">
+                    <i class="fa-regular fa-clock"></i>
+                    <p>Saturday: 10:00 AM - 12:00 PM</p>
+                  </li>
+                  <li class="contact-info">
+                    <i class="fa-regular fa-clock"></i>
+                    <p>Sunday: Closed</p>
+                  </li>
+                </ul>
+                
+                <form action="" method="POST" class="contact-form" id="contact-form">
+                    <p id="name-error"></p>
+                    <input type="text" id="name" class="form-input" placeholder="Your Name *">
+                  
+                    <p id="email-error"></p>
+                    <input type="text" id="email" class="form-input" placeholder="Your Email *">
+                  
+                    <p id="number-error"></p>
+                    <input type="tel" id="number" class="form-input" placeholder="Your Phone Number">
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+                    <select id="subject" name="subject" class="form-input">
+                        <option value="General Inquiry">General Inquiry</option>
+                        <option value="Collaboration">Collaboration</option>
+                        <option value="Feedback">Feedback</option>
+                        <option value="Technical Support">Technical Support</option>
+                    </select>
+                  
+                    <p id="message-error"></p>
+                    <textarea id="message" class="form-input" placeholder="Your Message *"></textarea>
+                  
+                    <div class="selects">
+                        <label><input type="checkbox" id="terms-checkbox">&#32 I agree to the terms and conditions</label>
+                    </div>
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
+                    <button type="submit" class="submit-button">Submit</button>
+                </form>
+            </div>
+         </section>
 
-            <button type="submit">Submit</button>
-        </form>
+         <footer class="footer-section">
+            <div class="section-content">
+                <p class="copyright-text">&copy 2025 ecochic</p>
+
+                <div class="social-link-list">
+                    <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+
+                <p class="policy-text">
+                    <a href="#" class="policy-link">Privacy policy</a>
+                </p>
+            </div>
+
+            <div class="image-creds">
+                <p>&copy Image Credits</p>
+                <cite class="citations">
+                    <a href="https://www.pexels.com/photo/a-group-of-people-discussing-beside-a-desktop-with-graph-on-screen-6476259/" 
+                    target="_blank">Group discussion</a><br>
+                    <a href="https://www.cleanpng.com/png-earth-with-growing-plant-8308181/download-png.html" 
+                    target="_blank">Growing earth</a><br>
+                    <a href="https://www.cleanpng.com/png-earth-surrounded-by-greenery-8321669/"
+                    target="_blank">Green earth</a>
+                </cite>
+            </div>
+        </footer>
     </main>
-</body>
 
+    <script src="javas/script.js"></script>
+</body>
 </html>
