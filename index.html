@@ -1,42 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UFT-8">
-    <meta name="viewport" content="width=device-width, initital-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EcoChic | Home</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css"> 
 </head>
-
 <body>
+    <!-- Header / Navbar -->
     <header>
-        <h1>Welcome to EcoChic</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="articles.html">Articles</a></li>
-                <li><a href="tips.html">Tips & Tricks</a></li>
-                <li><a href="progress.html">Progress</a></li>
+        <nav class="navbar section-content">
+            <a href="index.html" class="nav-logo">
+                <h2 class="logo-text">ecochic.</h2>
+            </a>
+            <ul class="nav-menu">
+                <button id="menu-close-button" class="fas fa-times"></button>
+                <li class="nav-items">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-items">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-items">
+                    <a href="contact.html" class="nav-link" id="contactbutton">Contact Us</a>
+                </li>
             </ul>
+
+            <button id="menu-open-button" class="fas fa-bars"></button>
         </nav>
     </header>
 
     <main>
-        <h2>We are Promoting Eco-Friendly and Sustainable Living</h2>
-        <p>Join our team at EcoChic and learn how to live more eco-friendly and have better sustainable habits to help
-            the planet.</p>
-        <div class="image-container">
-            <img src="images/image5.jpg" alt="image5" width="500" height="300">
-        </div>
-    </main>
-    <footer>
-        <h6>&copy; Image Credits: <cite><a
-                    href="https://www.premiumtimesng.com/opinion/611394-we-worship-rather-than-conquer-nature-by-sunday-adelaja.html"
-                    target="_blank">Worship not conquer nature</a></cite></h6>
-    </footer>
-</body>
+        <!-- Hero section -->
+        <section class="hero-section">
+            <div class="section-content">
+                <div class="hero-details">
+                    <h2 class="title">Hey There!</h2>
+                    <h3 class="subtitle">Join the EcoChic Movement for a Greener Future.</h3>
+                    <p class="description">At EcoChic, we believe that small changes 
+                        can make a big impact. 
+                        Our goal is to help you embrace sustainability through simple, 
+                        effective habits. 
+                        Whether you're just starting your eco-friendly journey or 
+                        looking to improve, we’ve got you covered.</p>
+                    <div id="eco-tips">
+                        <p>Did you know? Recycling one aluminum can saves enough energy to run a TV for 3 hours!</p>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <img src="images/i1.png" alt="image1" class="hero-image">
+                </div>
+            </div>
+        </section>
 
+        <section class="home-section" id="readbutton">
+            <div class="section-content">
+                <div class="p1-details">
+                    <h3 class="section-subtitle">Welcome to EcoChic.</h3>
+                    <p class="text">
+                        The way we live impacts the world around us. From the clothes we wear to 
+                        the food we eat and the energy we use, every choice we make leaves a footprint 
+                        on the planet. But here’s the good news: small, conscious changes can lead to 
+                        a massive difference. That’s why we created EcoChic—a platform dedicated to making 
+                        sustainable living easy, practical, and stylish.
+                    </p>
+                </div>
+            </div>
+
+            <div class="section-content">
+                <div class="p2-details">
+                    <h3 class="section-subtitle">Why Does Sustainability Matter?</h3>
+                    <p class="text">
+                        The environmental problems are at their increase on our dear planet. 
+                        Our landfills are overflowing with garbage; our oceans are polluted 
+                        with plastic, the reputation of industries continues to deplete natural 
+                        resources with high rate. The fashion industry alone is producing as 
+                        high as 92 million tons waste every year, and on the average a family 
+                        wastes almost 30% of the food that they buy. The effects of climate change 
+                        are accelerating, and this will certainly be inherited to the future 
+                        generations in a world that has no resemblance to life as we know it.
+                        However, it is not only about problems; there are also solutions. 
+                        Sustainability is a process of making better choices in our lives. 
+                        There is nothing like perfect sustainability. It means going as far as 
+                        possible—whether that means using reusable products, reducing water 
+                        consumption, using ethical fashion, or simply learning more about how 
+                        to protect the environment-every little helps.
+                    </p>
+                </div>
+
+                <div class="home-image-wrapper">
+                    <img src="images/i4.png" alt="image4" class="home-image">
+                </div>
+            </div>
+        </section>
+
+        <section class="p3-section">
+            <div class="p3-details">
+                <h3 class="section-subtitle">How EcoChic Helps You Live Sustainably</h3>
+                <p class="text">
+                    At EcoChic, we provide practical, everyday strategies to help you 
+                    make sustainable choices without feeling overwhelmed. Our resources 
+                    guide you through simple changes, such as:
+                </p>
+                <ul class="p3-list">
+                    <li>Reducing waste by using reusable shopping bags, avoiding 
+                        single-use plastics, and repurposing old items.</li>
+                    <li>Conserving energy by using energy-efficient appliances, turning 
+                        off lights when not needed, and opting for renewable energy sources.</li>
+                    <li>Making better food choices by eating locally sourced produce, 
+                        cutting down on food waste, and choosing plant-based options when possible.</li>
+                    <li>Adopting sustainable fashion by supporting brands that use 
+                        ethical and eco-friendly materials, upcycling old clothes, 
+                        and embracing second-hand shopping.</li>
+                </ul>
+                <p class="text">
+                    We also offer community support where you can connect with 
+                    like-minded individuals who are on the same journey toward 
+                    sustainability. Whether you're just getting started or looking 
+                    for new ways to go even greener, EcoChic is your go-to resource 
+                    for a more eco-conscious lifestyle.
+                </p>
+            </div>
+        </section>
+
+        <section class="p4-section">
+            <div class="p4-details">
+                <h3 class="section-subtitle">Take Action Today</h3>
+                <p class="text">
+                    Sustainability starts with small steps, but those steps add up. 
+                    Imagine if millions of people made just one eco-friendly switch 
+                    today—whether it’s skipping plastic straws, choosing a reusable 
+                    coffee cup, or opting for sustainable transportation. The impact 
+                    would be huge.
+                    So why not start now? Explore our resources, join our community, 
+                    and be part of the EcoChic movement. A greener future begins with 
+                    the choices we make today!
+                </p>
+            </div>
+        </section>
+
+        <footer class="footer-section">
+            <div class="section-content">
+                <p class="copyright-text">&copy 2025 ecochic</p>
+
+                <div class="social-link-list">
+                    <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+
+                <p class="policy-text">
+                    <a href="#" class="policy-link">Privacy policy</a>
+                </p>
+            </div>
+
+            <div class="image-creds">
+                <p>&copy Image Credits</p>
+                <cite class="citations">
+                    <a href="https://www.pexels.com/photo/a-group-of-people-discussing-beside-a-desktop-with-graph-on-screen-6476259/" 
+                    target="_blank">Group discussion</a><br>
+                    <a href="https://www.cleanpng.com/png-earth-with-growing-plant-8308181/download-png.html" 
+                    target="_blank">Growing earth</a><br>
+                    <a href="https://www.cleanpng.com/png-earth-surrounded-by-greenery-8321669/"
+                    target="_blank">Green earth</a>
+                </cite>
+            </div>
+        </footer>
+    </main>
+    <script src="javas/script.js"></script>
+</body>
 </html>
